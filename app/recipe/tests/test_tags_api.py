@@ -39,7 +39,7 @@ class PrivateTagsApiTests(TestCase):
     """Test authenticated API requests."""
 
     def setUp(self):
-        self.user = create_user
+        self.user = create_user()
         self.client = APIClient()
         self.client.force_authenticate(self.user)
 
