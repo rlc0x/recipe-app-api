@@ -81,3 +81,5 @@ class ModelTests(TestCase):
                 user=user,
                 name="Ingredient"
         )
+
+        self.assertEqual(str(ingredient), ingredient.name)
